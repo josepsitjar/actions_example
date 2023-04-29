@@ -1,6 +1,9 @@
 name: Python package
 
-on: [push]
+on:
+  # Triggers the workflow every 5 minutes
+  schedule:
+    - cron: "*/1 * * * *"
 
 jobs:
   build:
